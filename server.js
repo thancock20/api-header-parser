@@ -27,7 +27,7 @@ router.get('/', function(req, res) {
 
 router.use(useragent.express());
 
-router.get('/parser/', function(req, res) {
+router.get('/parser', function(req, res) {
   res.json({
     ip: req.ip,
     lang: req.acceptsLanguages()[0],
