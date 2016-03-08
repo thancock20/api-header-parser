@@ -16,4 +16,4 @@ node server.js
 `http://localhost:8080/parser/`
 
 ## Example output:
-`{ "ipaddress": "", "language": "", "software": "" }`
+`{ "ipaddress": "", "language": "", "os": "" }`
