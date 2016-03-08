@@ -13,7 +13,7 @@ node server.js
 ```
 
 ## Example usage:
-`http://localhost:8080/pasrser/`
+`http://localhost:8080/parser/`
 
 ## Example output:
 `{ "ipaddress": "", "language": "", "software": "" }`
