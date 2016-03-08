@@ -21,5 +21,5 @@ node server.js
 Note: Example IP address is IPv6.
 
 ### Additional notes
-* express-useragent is used to get the operating system.
-* Since this was a fairly simple project, I experimented by adding jade and sass (using node-sass-middleware).
+* [express-useragent](https://github.com/biggora/express-useragent) is used to get the operating system.
+* Since this was a fairly simple project, I experimented by adding jade and sass (using [node-sass-middleware](https://github.com/sass/node-sass-middleware)).
