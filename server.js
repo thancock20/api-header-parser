@@ -15,7 +15,7 @@ router.get('/main.css', function(req, res) {
 });
 
 router.get('/parser/', function(req, res) {
-  res.send('<h1>Hello, World!</h1>');
+  res.json(req.headers);
 });
 
 app.use('/', router);
