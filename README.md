@@ -12,7 +12,7 @@ npm install
 node server.js
 ```
 
-## Example usage:
+## Usage:
 `http://localhost:8080/parser`
 
 ## Example output:
