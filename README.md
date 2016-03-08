@@ -19,3 +19,7 @@ node server.js
 `{ "ip": "::1", "lang": "en-US", "os": "Linux 64" }`
 
 Note: Example IP address is IPv6.
+
+### Additional notes
+* express-useragent is used to get the operating system.
+* Since this was a fairly simple project, I experimented by adding jade and sass (using node-sass-middleware).
