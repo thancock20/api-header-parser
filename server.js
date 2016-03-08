@@ -2,19 +2,27 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var useragent = require('express-useragent');
+var sassMiddleware = require('node-sass-middleware');
 
 var port = process.env.PORT || 8080;
 
+app.use(sassMiddleware({
+  src: path.join(__dirname, 'styles'),
+  dest: path.join(__dirname, 'public'),
+  outputStyle: 'compressed',
+  indentedSyntax: true
+}));
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.set('view engine', 'jade');
+app.set('views', './views');
 
 var router = express.Router();
 
 router.get('/', function(req, res) {
-  res.render('index', { hostname: req.hostname === 'localhost' ? 'localhost:' + port : req.hostname});
-});
-
-router.get('/main.css', function(req, res) {
-  res.sendFile(path.join(__dirname + '/main.css'));
+  res.render('index', {
+    hostname: req.hostname === 'localhost' ? 'localhost:' + port : req.hostname
+  });
 });
 
 router.use(useragent.express());
