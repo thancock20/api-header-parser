@@ -13,7 +13,9 @@ node server.js
 ```
 
 ## Example usage:
-`http://localhost:8080/parser/`
+`http://localhost:8080/parser`
 
 ## Example output:
-`{ "ipaddress": "", "language": "", "os": "" }`
+`{ "ip": "::1", "lang": "en-US", "os": "Linux 64" }`
+
+Note: Example IP address is IPv6.
