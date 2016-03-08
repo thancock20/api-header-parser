@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
-    "express-useragent": "^0.2.4"
+    "express-useragent": "^0.2.4",
+    "jade": "^1.11.0"
   }
 }
