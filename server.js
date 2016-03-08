@@ -19,8 +19,8 @@ router.use(useragent.express());
 
 router.get('/parser/', function(req, res) {
   res.json({
-    ipaddress: req.ip,
-    language: req.acceptsLanguages()[0],
+    ip: req.ip,
+    lang: req.acceptsLanguages()[0],
     os: req.useragent.os
   });
 });
