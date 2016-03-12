@@ -3,8 +3,11 @@ var app = express();
 var path = require('path');
 var useragent = require('express-useragent');
 var sassMiddleware = require('node-sass-middleware');
+var morgan = require('morgan');
 
 var port = process.env.PORT || 8080;
+
+app.use(morgan('dev'));
 
 app.use(sassMiddleware({
   src: path.join(__dirname, 'styles'),
